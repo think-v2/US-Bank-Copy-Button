@@ -1,0 +1,18 @@
+{
+    "name": "US Bank Copy Button",
+    "description": "Export expended US Bank credit card transactions to clipboard in spreadsheet format",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "js": ["content.js"],
+            "matches": [
+                "https://onlinebanking.usbank.com/digital/servicing/shellapp/*"
+            ]
+        }
+    ],
+    "permissions": [
+    "activeTab",
+    "scripting"
+    ]
+  }
