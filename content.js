@@ -3,7 +3,7 @@ function handleClick() {
     const transactionContainers = document.getElementsByClassName("transaction-detail__container");
 
     let toBeCopy = '';
-    for (let i = 0; i < transactionContainers.length; i++) {
+    for (let i = transactionContainers.length - 1; i >= 0; i--) {
         // console.log('LOGGER: transaction found!' + i);
         bar = transactionContainers[i].parentElement.parentElement.parentElement.previousSibling;
         transAmount = bar.lastChild.lastChild.lastChild.textContent;
